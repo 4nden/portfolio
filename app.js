@@ -58,9 +58,20 @@ function initGraphicDesign(graphics) {
         const card = document.createElement('div');
         card.className = 'card';
         
+        let imageHTML = '';
+        if (graphic.imagePaths) {
+            imageHTML = `<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex;">`;
+            graphic.imagePaths.forEach(path => {
+                imageHTML += `<div style="flex: 1; position: relative;"><img src="${path}" alt="${graphic.title}" class="graphic-img" loading="lazy" style="position: absolute; width: 100%; height: 100%;"></div>`;
+            });
+            imageHTML += `</div>`;
+        } else {
+            imageHTML = `<img src="${graphic.imagePath}" alt="${graphic.title}" class="graphic-img" loading="lazy">`;
+        }
+
         card.innerHTML = `
             <div class="media-wrapper horizontal">
-                <img src="${graphic.imagePath}" alt="${graphic.title}" class="graphic-img" loading="lazy">
+                ${imageHTML}
             </div>
             <div class="card-content">
                 <h3 class="card-title">${graphic.title}</h3>

@@ -209,7 +209,7 @@ section {
     aspect-ratio: 16 / 9;
 }
 
-.media-wrapper iframe, .media-wrapper img {
+.media-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -217,6 +217,19 @@ section {
     height: 100%;
     border: none;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.media-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: contain;
+    padding: 2.5rem;
+    box-sizing: border-box;
     transition: transform 0.5s ease;
 }
 
