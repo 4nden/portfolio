@@ -9,16 +9,45 @@ document.addEventListener('DOMContentLoaded', () => {
     initVideos(portfolioData.videos);
     initGraphicDesign(portfolioData.graphicDesign);
     initLightbox();
+    initEmail();
 });
+
+function initEmail() {
+    const user = 'fanuelande.fa';
+    const domain = 'gmail.com';
+    const link = document.getElementById('email-link');
+    if (link) {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = `mailto:${user}@${domain}`;
+        });
+    }
+}
 
 function initVideos(videos) {
     const grid = document.getElementById('videos-grid');
+    const moreGrid = document.getElementById('more-videos-grid');
+    const moreSection = document.getElementById('more-videos-section');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    
     if (!grid || !videos) return;
 
-    videos.forEach(video => {
+    videos.forEach((video, index) => {
         const card = createVideoCard(video);
-        grid.appendChild(card);
+        if (index < 6) {
+            grid.appendChild(card);
+        } else {
+            moreGrid.appendChild(card);
+        }
     });
+
+    if (videos.length > 6) {
+        loadMoreBtn.style.display = 'inline-block';
+        loadMoreBtn.addEventListener('click', () => {
+            moreSection.style.display = 'block';
+            loadMoreBtn.style.display = 'none';
+        });
+    }
 }
 
 function initGraphicDesign(graphics) {
