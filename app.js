@@ -59,7 +59,6 @@ function createVideoCard(video) {
         </div>
         <div class="card-content">
             <h3 class="card-title">${video.title}</h3>
-            <p class="card-desc">${video.description}</p>
         </div>
     `;
 

@@ -1,70 +1,57 @@
 const portfolioData = {
   videos: [
     {
-      title: "Campaign Video 1",
-      description: "Promotional campaign video focusing on fast-paced pacing and audience retention.",
+      title: "Every Stockholm Metro Station | ITK LAN 0x41 - Trailer",
       embedUrl: "https://www.youtube.com/embed/tDU9B-dWwgE"
     },
     {
-      title: "Campaign Video 2",
-      description: "High-quality production for wide audiences.",
+      title: "ITK LAN 0x3F - Trailer",
       embedUrl: "https://www.youtube.com/embed/W941dEhb0zY"
     },
     {
-      title: "Campaign Video 3",
-      description: "Event highlight reel.",
+      title: "ITK LAN 0x3E - Trailer",
       embedUrl: "https://www.youtube.com/embed/aeLw1ikbHzI"
     },
     {
-      title: "Brand Story",
-      description: "Narrative-driven horizontal content.",
+      title: "A Minekraft ITexKursion",
       embedUrl: "https://www.youtube.com/embed/7bWtw3FLIFQ"
     },
     {
-      title: "Promotional 1",
-      description: "Dynamic product showcase.",
+      title: "ITK Reception Movie - 2025",
       embedUrl: "https://www.youtube.com/embed/Iz6EgI9KFiA"
     },
     {
-      title: "Promotional 2",
-      description: "Engaging commercial spot.",
+      title: "ITK Reception Movie - 2024",
       embedUrl: "https://www.youtube.com/embed/zd89YSMTwOo"
     },
     {
-      title: "Event Recap 1",
-      description: "Capturing the energy of live events.",
+      title: "ITK LAN 0x3C - Teaser Trailer",
       embedUrl: "https://www.youtube.com/embed/vW7x2a3YBs0"
     },
     {
-      title: "Event Recap 2",
-      description: "Action-packed event coverage.",
+      title: "Welcome to TMEIT - Reception Video 2024",
       embedUrl: "https://www.youtube.com/embed/W9uJE4HACds"
     },
     {
-      title: "Campaign Video 4",
-      description: "Visual storytelling at its finest.",
+      title: "British Pub 20/09 (Trailer) -TMEIT",
       embedUrl: "https://www.youtube.com/embed/z_d-z80WoLg"
     },
     {
-      title: "Campaign Video 5",
-      description: "Cinematic and engaging.",
+      title: "Eurovision Pub (09/05) - Teaser",
       embedUrl: "https://www.youtube.com/embed/Ble-ab-PZak"
     },
     {
-      title: "Campaign Video 6",
-      description: "Modern brand promotion.",
+      title: "TMEIT Presents - How to Ovve",
       embedUrl: "https://www.youtube.com/embed/2JmzmjrIvsI"
     }
   ],
   graphicDesign: [
     {
       title: "Custom Committee Patch",
-      description: "Vector asset designed for physical merchandise embroidery.",
       imagePath: "images/patch1.png"
     },
     {
       title: "Promotional Poster",
-      description: "Print and digital asset created using Adobe Illustrator.",
       imagePath: "images/poster1.png"
     }
   ]
