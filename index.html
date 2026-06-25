@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Video Producer & Designer</title>
+    <meta name="description"
+        content="Portfolio of a Social Media Video Producer and Graphic Designer specializing in high-engagement youth demographic content.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <header class="hero container">
+        <h1>OnlyFanuels<br>Productions™</h1>
+        <p class="subtitle">Producer & Designer.</p>
+        <div class="scroll-indicator">Scroll to Explore ↓</div>
+    </header>
+
+    <main class="container">
+        <section id="videos">
+            <h2>Featured Videos</h2>
+            <p class="subtitle" style="margin-left: 0;">A selection of my best work across various platforms.</p>
+            <div class="grid grid-videos" id="videos-grid">
+                <!-- Dynamically populated via app.js -->
+            </div>
+        </section>
+
+        <section id="graphic-design">
+            <h2>Brand & Graphic Design</h2>
+            <p class="subtitle" style="margin-left: 0;">Vector assets, promotional posters, and custom merchandise
+                designs.</p>
+            <div class="grid grid-graphic" id="graphic-grid">
+                <!-- Dynamically populated via app.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="mailto:contact@example.com">Email Me</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">TikTok</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Creative Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Element -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <img src="" alt="Expanded graphic" id="lightbox-img">
+    </div>
+
+    <!-- Data and Application Logic -->
+    <script src="portfolio-data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
